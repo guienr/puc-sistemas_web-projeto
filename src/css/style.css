@@ -34,7 +34,7 @@ header .logo {
 }
 
 header .logo img {
-    width: 120px; /* ou ajuste conforme necessário */
+    width: 90px;
     height: auto;
 }
 
@@ -87,3 +87,4 @@ a button {
     margin-top: 20px;
     margin-right: 10px;
 }
+
