@@ -1,3 +1,5 @@
+let payload = null; 
+
 document.addEventListener("DOMContentLoaded", function () {
     const token = localStorage.getItem("authToken");
 
@@ -7,27 +9,40 @@ document.addEventListener("DOMContentLoaded", function () {
         return;
     }
 
-    const payload = jwt_decode(token); 
+    try {
+        payload = jwt_decode(token); 
+    } catch (e) {
+        console.error("Erro ao decodificar token:", e);
+        alert("Token inválido. Por favor, faça login novamente.");
+        localStorage.removeItem("authToken");
+        window.location.href = "proj_sistemas_web_login.html";
+        return;
+    }
 
     const tempoAtualEmSegundos = Math.floor(Date.now() / 1000);
     
     if (payload.exp && payload.exp < tempoAtualEmSegundos) {
         alert("Sessão expirada. Por favor, faça login novamente."); 
-    
         localStorage.removeItem("authToken");
         window.location.href = "proj_sistemas_web_login.html";
-
         return;
     }
-})
+
+    carregarEstadoFavoritos(); 
+});
+
 
 function favoritarMateria(materia, botao) {
     const mensagemDiv = document.getElementById("mensagemFavorito");
-    const token = localStorage.getItem("authToken");
 
+    if (!payload || !payload.userId) {
+        alert("Erro de autenticação. Por favor, recarregue a página e faça login.");
+        return;
+    }
 
     let listaUsuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-    const indiceUsuario = listaUsuarios.findIndex(u => u.email === payload.userId);
+
+    const indiceUsuario = listaUsuarios.findIndex(u => u.email === payload.userId); 
 
     if (indiceUsuario === -1) {
         alert("Usuário não encontrado. Faça login novamente.");
@@ -58,23 +73,24 @@ function favoritarMateria(materia, botao) {
 
     listaUsuarios[indiceUsuario] = usuario; 
     localStorage.setItem("usuarios", JSON.stringify(listaUsuarios));
-    
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    const token = localStorage.getItem("authToken");
-    if (!token) return; 
+
+function carregarEstadoFavoritos() {
+
+    if (!payload || !payload.userId) return; 
 
     try {
-        const payload = jwt_decode(token);
         const listaUsuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
         
-        const usuario = listaUsuarios.find(u => u.email === payload.userId);
+        const usuario = listaUsuarios.find(u => u.email === payload.userId); 
 
         if (!usuario || !usuario.favoritas) return;
 
         document.querySelectorAll(".estrela").forEach(botao => {
-            const match = botao.getAttribute("onclick").match(/'([^']+)'/);
+
+            const onclickValue = botao.getAttribute("onclick");
+            const match = onclickValue ? onclickValue.match(/'([^']+)'/) : null;
             
             if (match && match[1]) {
                 const materia = match[1];
@@ -86,7 +102,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
         
     } catch (e) {
-        console.error("Erro ao decodificar token ou carregar usuários:", e);
+        console.error("Erro ao carregar estado dos favoritos:", e);
     }
-    
-});
+}

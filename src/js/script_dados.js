@@ -57,9 +57,9 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
         
-        if (novaSenha.length < 8) {
-            mensagem.textContent = "A nova senha deve ter pelo menos 8 caracteres.";
-            return;
+        if (novaSenha.length > 0 && novaSenha.length < 8) { 
+        mensagem.textContent = "A nova senha deve ter pelo menos 8 caracteres.";
+        return;
         }
 
         const emailValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(novoEmail);
