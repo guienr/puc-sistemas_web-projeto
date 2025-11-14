@@ -1,34 +1,65 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
+
 <head>
-  <meta charset="UTF-8">
-  <title>StudyBuddy</title>
-  <meta name="description" content="Plataforma educacional completa que oferece resumos, textos explicativos, exercícios resolvidos, simulados interativos e suporte para tirar dúvidas. Ideal para estudantes que buscam reforço escolar, preparação para vestibulares, concursos ou simplesmente aprender de forma prática e eficiente">
+    <meta charset="UTF-8">
+    <title>StudyBuddy</title>
+    <meta name="description" content= "Plataforma educacional completa que oferece resumos, textos explicativos, exercícios resolvidos, simulados interativos e suporte para tirar dúvidas. Ideal para estudantes que buscam reforço escolar, preparação para vestibulares, concursos ou simplesmente aprender de forma prática e eficiente">
+    <link rel="stylesheet" href="..\..\src\css\style_usuario.css">
 </head>
 
+
 <body>
-  <h1>Área do usuário</h1>
-  <h2>Nome: <span id="nomeUsuario"></span></h2>
-  <h2>Email: <span id="emailUsuario"></span></h2>
-  <h2>Matérias favoritas:</h2>
-  <ul id="listaFavoritas"></ul>
 
-  <a href="proj_sistemas_web_materias.html">
-    <button>Matérias</button>
-  </a>
 
-  <a href="proj_sistemas_web_simulados.html">
-    <button>Simulados</button>
-  </a>
+  <header>
+    <div class="logo">
+      <img src="..\..\assets\logo_studybuddy.png" alt="StudyBuddy Logo">
+    </div>
 
-  <button id="logout">Sair</button>
+    <div class="botoes_superiores">
+      <a href="proj_sistemas_web_materias.html">
+        <button>Matérias</button>
+      </a>
 
-  <div>
-    <button onclick="window.location.href='proj_sistemas_web_dados.html'">Alterar dados da conta</button>
+      <a href="proj_sistemas_web_simulados.html">
+        <button>Simulados</button>
+      </a>
+    </div>
+  </header>
+
+
+  <div class="container">
+    <h1><u>Área do usuário</u></h1>
+
+    <div class="infos">
+      <label for="nome"><strong>Nome:</strong></label>
+      <span id="nomeUsuario"></span>
+    </div>
+
+    <div class="infos">
+      <label for="email"><strong>Email:</strong></label>
+      <span id="emailUsuario"></span>
+    </div>
+
+    <div class="infos">
+      <label for="materiasfavs"><strong>Matérias favoritas:</strong></label>
+      <ul id="listaFavoritas"></ul>
+    </div>
+
+    <div class="botao_alterar">
+      <button onclick="window.location.href='proj_sistemas_web_dados.html'">Alterar dados da conta</button>
+    </div>
+    <div class="botao_sair">
+      <button id="logout">Sair</button>
+    </div>
+
   </div>
+
 
 </body>
 
-<script src="../js/script_usuario.js"></script>
+<script src="..\..\src\js\script_usuario.js"></script>
 
 </html>

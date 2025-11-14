@@ -1,37 +1,60 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
+
 
 <head>
     <meta charset="UTF-8">
     <title>StudyBuddy</title>
     <meta name="description" content= "Plataforma educacional completa que oferece resumos, textos explicativos, exercícios resolvidos, simulados interativos e suporte para tirar dúvidas. Ideal para estudantes que buscam reforço escolar, preparação para vestibulares, concursos ou simplesmente aprender de forma prática e eficiente">
+    <link rel="stylesheet" href="..\..\src\css\style_login.css">
 </head>
 
+
 <body>
-    <h1>Área de login</h1>
 
-    <form id="formulario">
+    <header>
+        <div class="logo">
+            <img src="..\..\assets\logo_studybuddy.png" alt="StudyBuddy Logo">
+        </div>
+    </header>
 
-    <label for="email">E-mail:</label>
-    <input type="email" id="email" name="email" placeholder="exemplo@email.com">
 
-    <label for="senha">Senha:</label>
-    <input type="password" id="senha" name="senha" minlength="8">
+    <div class="container">
+        <h1><u>Área de login</u></h1>
+        <form id="formulario">
 
-    <input id="botao" type="submit" value="Logar">
+            <div class="infos">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+            </div>
 
-    </form>
+            <div class="infos">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" minlength="8" placeholder="Digite sua senha">
+            </div>
+
+            <input id="botao" type="submit" value="Logar">
+
+        </form>
+
+        <div class="botao_voltar">
+            <a href="index.html">
+                <button>Voltar</button>
+            </a>
+        </div>
+
+        <div class="esqueci">
+            <button onclick="window.location.href='proj_sistemas_web_senha.html'">Esqueci a senha</button>
+        </div>
+
+    </div>
 
 </body>
 
-<div>
-<button onclick="window.location.href='proj_sistemas_web_senha.html'">Esqueci a senha</button>
-</div>
-
 <div id="mensagem"></div>
 
-<script src="../js/script_login.js"></script>
+<script src="..\..\src\js\script_login.js"></script>
+
 
 </html>
 
