@@ -1,31 +1,51 @@
 document.addEventListener("DOMContentLoaded", function () {
-      const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
+    const token = localStorage.getItem("authToken");
 
-      if (!usuarioLogado) {
+    if (!token) {
+        alert("Acesso negado. Por favor, faça login.");
         window.location.href = "proj_sistemas_web_login.html";
         return;
-      }
+    }
 
-      document.getElementById("nomeUsuario").textContent = usuarioLogado.nome || "Não informado";
-      document.getElementById("emailUsuario").textContent = usuarioLogado.email || "Não informado";
+    const payload = jwt_decode(token); 
 
-      const listaFavoritas = document.getElementById("listaFavoritas");
-      listaFavoritas.innerHTML = "";
-
-      if (Array.isArray(usuarioLogado.favoritas) && usuarioLogado.favoritas.length > 0) {
-        usuarioLogado.favoritas.forEach(materia => {
-          const item = document.createElement("li");
-          item.textContent = materia;
-          listaFavoritas.appendChild(item);
-        });
-      } else {
-        const item = document.createElement("li");
-        item.textContent = "Nenhuma matéria favoritada ainda.";
-        listaFavoritas.appendChild(item);
-      }
-
-      document.getElementById("logout").addEventListener("click", function () {
-        localStorage.removeItem("usuarioLogado");
+    const tempoAtualEmSegundos = Math.floor(Date.now() / 1000);
+    
+    if (payload.exp && payload.exp < tempoAtualEmSegundos) {
+        alert("Sessão expirada. Por favor, faça login novamente."); 
+    
+        localStorage.removeItem("authToken");
         window.location.href = "proj_sistemas_web_login.html";
-      });
-    });
+
+        return;
+    }
+
+    document.getElementById("nomeUsuario").textContent = payload.userName;
+    document.getElementById("emailUsuario").textContent = payload.userId;
+
+    const listaUsuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+    const usuarioAtual = listaUsuarios.find(u => u.email === payload.userId);
+
+    const listaFavoritas = document.getElementById("listaFavoritas");
+    listaFavoritas.innerHTML = "";
+
+    if (usuarioAtual && usuarioAtual.favoritas && usuarioAtual.favoritas.length > 0) {
+        usuarioAtual.favoritas.forEach(materia => {
+            const li = document.createElement("li");
+            li.textContent = materia;
+            listaFavoritas.appendChild(li);
+        });
+    } else {
+        const li = document.createElement("li");
+        li.textContent = "Nenhuma matéria favorita cadastrada.";
+        listaFavoritas.appendChild(li);
+    }
+
+    const botaoLogout = document.getElementById("logout");
+    if (botaoLogout) {
+        botaoLogout.addEventListener("click", function () {
+            localStorage.removeItem("authToken");
+            window.location.href = "proj_sistemas_web_login.html";
+        });
+    }
+});

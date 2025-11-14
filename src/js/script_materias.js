@@ -1,49 +1,92 @@
+document.addEventListener("DOMContentLoaded", function () {
+    const token = localStorage.getItem("authToken");
+
+    if (!token) {
+        alert("Acesso negado. Por favor, faça login.");
+        window.location.href = "proj_sistemas_web_login.html";
+        return;
+    }
+
+    const payload = jwt_decode(token); 
+
+    const tempoAtualEmSegundos = Math.floor(Date.now() / 1000);
+    
+    if (payload.exp && payload.exp < tempoAtualEmSegundos) {
+        alert("Sessão expirada. Por favor, faça login novamente."); 
+    
+        localStorage.removeItem("authToken");
+        window.location.href = "proj_sistemas_web_login.html";
+
+        return;
+    }
+})
+
 function favoritarMateria(materia, botao) {
-  const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
-  const mensagemDiv = document.getElementById("mensagemFavorito");
+    const mensagemDiv = document.getElementById("mensagemFavorito");
+    const token = localStorage.getItem("authToken");
 
-  if (!usuarioLogado) {
-    mensagemDiv.textContent = "Você precisa estar logado para favoritar matérias.";
-    mensagemDiv.style.color = "red";
-    return;
-  }
 
-  if (!usuarioLogado.favoritas) {
-    usuarioLogado.favoritas = [];
-  }
+    let listaUsuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+    const indiceUsuario = listaUsuarios.findIndex(u => u.email === payload.userId);
 
-  const jaFavoritada = usuarioLogado.favoritas.includes(materia);
+    if (indiceUsuario === -1) {
+        alert("Usuário não encontrado. Faça login novamente.");
+        localStorage.removeItem("authToken");
+        window.location.href = "proj_sistemas_web_login.html";
+        return;
+    }
 
-  if (!jaFavoritada) {
-    usuarioLogado.favoritas.push(materia);
-    botao.classList.add("favorita");
-    mensagemDiv.textContent = `"${materia}" adicionada aos favoritos!`;
-    mensagemDiv.style.color = "green";
-  } else {
-    usuarioLogado.favoritas = usuarioLogado.favoritas.filter(m => m !== materia);
-    botao.classList.remove("favorita");
-    mensagemDiv.textContent = `"${materia}" removida dos favoritos.`;
-    mensagemDiv.style.color = "orange";
-  }
+    const usuario = listaUsuarios[indiceUsuario];
 
-  const listaUsuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
-  const indice = listaUsuarios.findIndex(u => u.email === usuarioLogado.email);
-  if (indice !== -1) {
-    listaUsuarios[indice] = usuarioLogado;
+    if (!usuario.favoritas) {
+        usuario.favoritas = [];
+    }
+
+    const jaFavoritada = usuario.favoritas.includes(materia);
+
+    if (!jaFavoritada) {
+        usuario.favoritas.push(materia);
+        botao.classList.add("favorita");
+        mensagemDiv.textContent = `"${materia}" adicionada aos favoritos!`;
+        mensagemDiv.style.color = "green";
+    } else {
+        usuario.favoritas = usuario.favoritas.filter(m => m !== materia);
+        botao.classList.remove("favorita");
+        mensagemDiv.textContent = `"${materia}" removida dos favoritos.`;
+        mensagemDiv.style.color = "orange";
+    }
+
+    listaUsuarios[indiceUsuario] = usuario; 
     localStorage.setItem("usuarios", JSON.stringify(listaUsuarios));
-  }
-
-  localStorage.setItem("usuarioLogado", JSON.stringify(usuarioLogado));
+    
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const usuarioLogado = JSON.parse(localStorage.getItem("usuarioLogado"));
-  if (!usuarioLogado || !usuarioLogado.favoritas) return;
+    const token = localStorage.getItem("authToken");
+    if (!token) return; 
 
-  document.querySelectorAll(".estrela").forEach(botao => {
-    const materia = botao.getAttribute("onclick").match(/'([^']+)'/)[1];
-    if (usuarioLogado.favoritas.includes(materia)) {
-      botao.classList.add("favorita");
+    try {
+        const payload = jwt_decode(token);
+        const listaUsuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
+        
+        const usuario = listaUsuarios.find(u => u.email === payload.userId);
+
+        if (!usuario || !usuario.favoritas) return;
+
+        document.querySelectorAll(".estrela").forEach(botao => {
+            const match = botao.getAttribute("onclick").match(/'([^']+)'/);
+            
+            if (match && match[1]) {
+                const materia = match[1];
+                
+                if (usuario.favoritas.includes(materia)) {
+                    botao.classList.add("favorita"); 
+                }
+            }
+        });
+        
+    } catch (e) {
+        console.error("Erro ao decodificar token ou carregar usuários:", e);
     }
-  });
+    
 });
