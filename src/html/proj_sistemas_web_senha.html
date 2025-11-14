@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>StudyBuddy</title>
-    <meta name="description" content= "Plataforma educacional completa que oferece resumos, textos explicativos, exercícios resolvidos, simulados interativos e suporte para tirar dúvidas. Ideal para estudantes que buscam reforço escolar, preparação para vestibulares, concursos ou simplesmente aprender de forma prática e eficiente">
-    <link rel="stylesheet" href="..\..\src\css\style_senha.css">
+    <title>StudyBuddy - Esqueci a Senha</title>
+    <meta name="description" content= "Área do StudyBuddy para alterar e recuperar a senha do usuário">
+    <link rel="stylesheet" href="..\css\style_senha.css">
 </head>
 
 
@@ -41,11 +41,27 @@
         
     </div>
 
-</body>
+    <div id="mensagem"></div>
+
+<div id="areaRedefinicao" style="display:none;">
+    <h2>Redefinir Senha</h2>
+    <form id="formularioRedefinir">
+        <label for="novaSenha">Nova Senha:</label>
+        <input type="password" id="novaSenha" name="novaSenha" placeholder="Mínimo 8 caracteres">
+        
+        <label for="confirmaSenha">Confirmar Nova Senha:</label>
+        <input type="password" id="confirmaSenha" name="confirmaSenha">
+
+        <input type="submit" value="Salvar Nova Senha">
+    </form>
+</div>
 
 
 <div id="mensagem"></div>
 
-<script src="..\..\src\js\script_senha.js"></script>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script src="../js/script_senha.js"></script>
 
 </html>
