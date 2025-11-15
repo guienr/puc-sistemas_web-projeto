@@ -1,2 +1,42 @@
-429: Too Many Requests
-For more on scraping GitHub and how it may affect your rights, please review our Terms of Service (https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).
+# puc-sistemas_web-projeto
+StudyBuddy é um projeto dedicado ao desenvolvimento de um site interativo que auxilia estudantes do ensino médio a aprofundarem seus conhecimentos nas principais disciplinas escolares. A proposta é reunir conteúdos organizados, ferramentas de estudo e recursos multimídia em um ambiente acessível e intuitivo.
+
+
+# StudyBuddy
+
+
+## Descrição
+É uma plataforma de ensino online desenvolvida para apoiar estudantes do ensino fundamental, médio e candidatos a vestibulares. Seu principal objetivo é oferecer recursos educacionais acessíveis e personalizados, promovendo o aprendizado contínuo e eficaz por meio de tecnologia.
+
+
+## Tecnologias Utilizadas
+- HTML5
+- CSS3
+- JavaScript
+- SEO
+- JWT
+- Web Storage API
+- JSON
+
+
+## Estrutura do Projeto
+Pasta "/docs" - Local onde ocorre a documentação do projeto (PDFs, relatório, protótipo)
+Pasta "/src" - Local onde está toda a codificação de front-end e back-end
+Pasta "/assets" - Local onde estarão todos os anexos de imagens, vídeos e logos 
+Pasta "README.md" - Arquivo de acompanhamento do projeto e divisão de tarefas
+Pasta "LICENSE" - Licença do arquivo
+
+
+## Protótipo
+Link para o protótipo no Figma: [link]
+
+
+## Integrantes
+- Guilherme Eiki – Front-end e Arquiteto
+- Rafael Palma – Front-end e Design
+- João Vitor Avanzo – Front-end e Documentação
+
+## Status do Projeto
+Em desenvolvimento
+
+Primeira versão estimada para: 26/11/2025
