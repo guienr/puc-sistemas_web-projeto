@@ -40,3 +40,14 @@ Link para o protótipo no Figma: [link]
 Em desenvolvimento
 
 Primeira versão estimada para: 26/11/2025
+
+## Instruções de Instalação e Execução
+- Pré-requisitos: Você deve ter o Git instalado em seu computador.
+- Abra seu terminal ou prompt de comando e execute o seguinte comando: git clone [INSIRA A URL DO SEU REPOSITÓRIO AQUI]
+- Abra o arquivo principal index.html em seu navegador.
+Recomendação: Utilize o Microsoft Edge para garantir a visualização correta.
+- Após abrir o site, você precisará configurar sua conta:
+Criação de Conta: Utilize a área de cadastro para registrar uma nova conta, fornecendo Nome, Email e Senha.
+Login: Após o cadastro, utilize suas credenciais recém-criadas na área de login para acessar a plataforma e suas ferramentas.
+- Com o acesso liberado, você pode navegar pelas áreas de Matérias, Simulados e Outras Ferramentas.
+Aviso: Apenas dois conteúdos por matéria foram preenchidos com dados para fins de demonstração. O restante do site está estruturado, mas o conteúdo é demonstrativo ou está vazio.
