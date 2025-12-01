@@ -98,3 +98,12 @@ input[type="submit"] {
     cursor: pointer;
     font-size: 18px;
 }
+
+
+#mensagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    color: #ff0000;
+}

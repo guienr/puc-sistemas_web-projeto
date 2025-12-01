@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #111;
+    padding: 0;
+}
+
+
+header {
+    background-color: #165810;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 90px;
+    height: auto;
+}
+
+.titulo {
+    color: #d5d5d5;
+    text-align: center;
+    margin: 0;
+    flex-grow: 1;
+}
+
+header .botao {
+    display: flex;
+    gap: 20px;
+}
+
+
+header .botao button {
+    background-color: #d5d5d5;
+    color: #1D1D1D;
+    border: none;
+    padding: 15px 80px;
+    border-radius: 25px;
+    margin-left: 40px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.textoresolva {
+    text-align: center;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.exercicio1 {
+    width: 100%;
+    max-width: 1900px;
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.exercicio2 {
+    width: 100%;
+    max-width: 1900px;
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.exercicio3 {
+    width: 100%;
+    max-width: 1900px;
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.exercicio4 {
+    width: 100%;
+    max-width: 1900px;
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.exercicio5 {
+    width: 100%;
+    max-width: 1900px;
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.exercicio6 {
+    width: 100%;
+    max-width: 1900px;
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.exercicio7 {
+    width: 100%;
+    max-width: 1900px;
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.exercicio8 {
+    width: 100%;
+    max-width: 1900px;
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.exercicio9 {
+    width: 100%;
+    max-width: 1900px;
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.exercicio10 {
+    width: 100%;
+    max-width: 1900px;
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+}

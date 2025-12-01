@@ -28,7 +28,7 @@ Pasta "LICENSE" - Licença do arquivo
 
 
 ## Protótipo
-Link para o protótipo no Figma: [link]
+Link para o protótipo no Figma: Disponível na pasta docs no github com nome StudyBuddy-prototipo.pdf
 
 
 ## Integrantes

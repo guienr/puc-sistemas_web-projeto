@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    color: #111;
+    padding: 0;
+}
+
+
+header {
+    background-color: #080a37;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 90px;
+    height: auto;
+}
+
+.titulo {
+    color: #d5d5d5;
+    text-align: center;
+    margin: 0;
+    flex-grow: 1;
+}
+
+header .botao {
+    display: flex;
+    gap: 20px;
+}
+
+
+header .botao button {
+    background-color: #d5d5d5;
+    color: #1D1D1D;
+    border: none;
+    padding: 15px 80px;
+    border-radius: 25px;
+    margin-left: 40px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.containerdv {
+    background-color: #fff;
+    padding: 90px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 750px;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 30px;
+
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.infos {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #080a37;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+}
