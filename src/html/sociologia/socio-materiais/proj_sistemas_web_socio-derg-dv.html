@@ -5,18 +5,47 @@
     <meta charset="UTF-8">
     <title>Dúvidas - Desigualdade Econômica, Racial e de Gênero</title>
     <meta name="description" content="Página dedicada ao envio e discussão de dúvidas sobre Desigualdade Econômica, Racial e de Gênero na Sociologia. Envie suas perguntas e participe do debate com outros alunos para aprofundar seu entendimento sobre os diferentes tipos de desigualdade social, suas causas e consequências.">
-    </head>
+    <link rel="stylesheet" href="..\..\..\css\sociologia\socio-materiais\style_socio-derg-dv.css">
+</head>
 
 <body>
 
+  <header>
+    <div class="logo">
+      <img src="..\..\..\..\assets\logo_studybuddy_socio.png" alt="StudyBuddy Logo Sociologia">
+    </div>
+
+    <h1 class="titulo">Desigualdade Econômica, Racial e de Gênero - Videoaulas</h1>
+
+    <nav class="botao">
+      <a href="..\proj_sistemas_web_socio-derg.html">
+        <button>Voltar</button> 
+      </a>
+    </nav>
+  </header>
+
     <h1>Dúvidas - Desigualdade Econômica, Racial e de Gênero</h1>
 
-    <form id="formDuvida" data-content-id="socio-derg">
-        <h3>Envie sua Dúvida:</h3>
-        <input type="text" id="nomeAluno" placeholder="Seu Nome" required><br><br>
-        <textarea id="textoDuvida" placeholder="Digite sua dúvida aqui..." rows="4" required></textarea><br><br>
-        <button type="submit">Enviar Dúvida</button>
-    </form>
+    <div class="containerdv">
+
+      <form id="formDuvida" data-content-id="socio-derg">
+
+        <h2 class="textoenviar">Envie sua Dúvida:</h3>
+
+        <div class="infos">
+          <label for="nomeAluno">Nome: </label>
+          <input type="text" id="nomeAluno" placeholder="Seu Nome" required><br><br>
+        </div>
+
+        <div class="infos">
+          <label for="textoDuvida">Dúvida: </label>
+          <textarea id="textoDuvida" placeholder="Digite sua dúvida aqui..." rows="4" required></textarea><br><br>
+        </div>
+          
+        <input id="botao" type="submit" value="Enviar dúvida">
+
+      </form>
+    </div>
 
     <hr>
 

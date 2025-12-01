@@ -5,18 +5,45 @@
     <meta charset="UTF-8">
     <title>Dúvidas - Conjunctions</title>
     <meta name="description" content="Envie e consulte dúvidas sobre conjunções em inglês. Espaço interativo para estudantes esclarecerem questões sobre 'and', 'but', 'because' e outras estruturas gramaticais.">
-    </head>
+    <link rel="stylesheet" href="..\..\..\css\ingles\ing-materiais\style_ing-conj-dv.css">
+</head>
 
 <body>
 
-    <h1>Dúvidas - Conjunctions</h1>
+  <header>
+    <div class="logo">
+      <img src="..\..\..\..\assets\logo_studybuddy_ing.png" alt="StudyBuddy Logo Inglês">
+    </div>
 
-    <form id="formDuvida" data-content-id="ing-conj">
-        <h3>Envie sua Dúvida:</h3>
-        <input type="text" id="nomeAluno" placeholder="Seu Nome" required><br><br>
-        <textarea id="textoDuvida" placeholder="Digite sua dúvida aqui..." rows="4" required></textarea><br><br>
-        <button type="submit">Enviar Dúvida</button>
-    </form>
+    <h1 class="titulo">Conjunctions - Dúvidas</h1>
+
+    <nav class="botao">
+      <a href="..\proj_sistemas_web_ing-conj.html">
+        <button>Voltar</button> 
+      </a>
+    </nav>
+  </header>
+
+    <div class="containerdv">
+
+      <form id="formDuvida" data-content-id="ing-conj">
+
+        <h2 class="textoenviar">Envie sua Dúvida:</h3>
+
+        <div class="infos">
+          <label for="nomeAluno">Nome: </label>
+          <input type="text" id="nomeAluno" placeholder="Seu Nome" required><br><br>
+        </div>
+
+        <div class="infos">
+          <label for="textoDuvida">Dúvida: </label>
+          <textarea id="textoDuvida" placeholder="Digite sua dúvida aqui..." rows="4" required></textarea><br><br>
+        </div>
+          
+        <input id="botao" type="submit" value="Enviar dúvida">
+
+      </form>
+    </div>
 
     <hr>
 

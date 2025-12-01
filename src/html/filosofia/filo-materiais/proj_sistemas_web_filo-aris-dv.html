@@ -5,18 +5,46 @@
     <meta charset="UTF-8">
     <title>Dúvidas - Aristóteles</title>
     <meta name="description" content="Envie e consulte dúvidas sobre Aristóteles e sua filosofia. Espaço interativo para estudantes discutirem temas como ética, política e lógica aristotélica. Ideal para reforço escolar e preparação para vestibulares.">
-    </head>
+    <link rel="stylesheet" href="..\..\..\css\filosofia\filo-materiais\style_filo-aris-dv.css">
+  </head>
 
 <body>
 
-    <h1>Dúvidas - Aristóteles</h1>
+  <header>
+    <div class="logo">
+      <img src="..\..\..\..\assets\logo_studybuddy_filo.png" alt="StudyBuddy Logo Filosofia">
+    </div>
 
-    <form id="formDuvida" data-content-id="filo-aris">
-        <h3>Envie sua Dúvida:</h3>
-        <input type="text" id="nomeAluno" placeholder="Seu Nome" required><br><br>
-        <textarea id="textoDuvida" placeholder="Digite sua dúvida aqui..." rows="4" required></textarea><br><br>
-        <button type="submit">Enviar Dúvida</button>
-    </form>
+    <h1 class="titulo">Aristóteles - Dúvidas</h1>
+
+    <nav class="botao">
+      <a href="..\proj_sistemas_web_filo-aris.html">
+        <button>Voltar</button> 
+      </a>
+    </nav>
+  </header>
+
+
+    <div class="containerdv">
+
+      <form id="formDuvida" data-content-id="filo-aris">
+
+        <h2 class="textoenviar">Envie sua Dúvida:</h3>
+
+        <div class="infos">
+          <label for="nomeAluno">Nome: </label>
+          <input type="text" id="nomeAluno" placeholder="Seu Nome" required><br><br>
+        </div>
+
+        <div class="infos">
+          <label for="textoDuvida">Dúvida: </label>
+          <textarea id="textoDuvida" placeholder="Digite sua dúvida aqui..." rows="4" required></textarea><br><br>
+        </div>
+          
+        <input id="botao" type="submit" value="Enviar dúvida">
+
+      </form>
+    </div>
 
     <hr>
 

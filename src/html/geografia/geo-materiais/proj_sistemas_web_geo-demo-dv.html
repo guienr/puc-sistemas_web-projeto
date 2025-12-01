@@ -5,18 +5,45 @@
     <meta charset="UTF-8">
     <title>Dúvidas - Demografia</title>
     <meta name="description" content="Envie e consulte dúvidas sobre Demografia, incluindo temas como população, crescimento demográfico e distribuição espacial. Espaço interativo para estudantes esclarecerem questões e aprofundarem o aprendizado para provas e vestibulares.">
-    </head>
+    <link rel="stylesheet" href="..\..\..\css\geografia\geo-materiais\style_geo-demo-dv.css">
+</head>
 
 <body>
 
-    <h1>Dúvidas - Demografia</h1>
+  <header>
+    <div class="logo">
+      <img src="..\..\..\..\assets\logo_studybuddy_geo.png" alt="StudyBuddy Logo Geografia">
+    </div>
 
-    <form id="formDuvida" data-content-id="geo-demo">
-        <h3>Envie sua Dúvida:</h3>
-        <input type="text" id="nomeAluno" placeholder="Seu Nome" required><br><br>
-        <textarea id="textoDuvida" placeholder="Digite sua dúvida aqui..." rows="4" required></textarea><br><br>
-        <button type="submit">Enviar Dúvida</button>
-    </form>
+    <h1 class="titulo">Demografia - Dúvidas</h1>
+
+    <nav class="botao">
+      <a href="..\proj_sistemas_web_geo-demo.html">
+        <button>Voltar</button> 
+      </a>
+    </nav>
+  </header>
+
+    <div class="containerdv">
+
+      <form id="formDuvida" data-content-id="geo-demo">
+
+        <h2 class="textoenviar">Envie sua Dúvida:</h3>
+
+        <div class="infos">
+          <label for="nomeAluno">Nome: </label>
+          <input type="text" id="nomeAluno" placeholder="Seu Nome" required><br><br>
+        </div>
+
+        <div class="infos">
+          <label for="textoDuvida">Dúvida: </label>
+          <textarea id="textoDuvida" placeholder="Digite sua dúvida aqui..." rows="4" required></textarea><br><br>
+        </div>
+          
+        <input id="botao" type="submit" value="Enviar dúvida">
+
+      </form>
+    </div>
 
     <hr>
 
