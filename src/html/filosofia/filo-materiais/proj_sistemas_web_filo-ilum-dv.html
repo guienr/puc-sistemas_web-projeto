@@ -5,25 +5,40 @@
     <meta charset="UTF-8">
     <title>Dúvidas - Iluminismo</title>
     <meta name="description" content="Envie e consulte dúvidas sobre o Iluminismo. Espaço interativo para discutir ideias iluministas, pensadores como Voltaire, Rousseau e Montesquieu, e aprofundar seus estudos para provas e vestibulares.">
-    </head>
+    <link rel="stylesheet" href="..\..\..\css\filosofia\filo-materiais\style_filo-ilum-dv.css">  
+  </head>
 
 <body>
 
-    <h1>Dúvidas - Iluminismo</h1>
+  <header>
+    <div class="logo">
+      <img src="..\..\..\..\assets\logo_studybuddy_filo.png" alt="StudyBuddy Logo Filosofia">
+    </div>
 
-    <form id="formDuvida" data-content-id="filo-ilum">
-        <h3>Envie sua Dúvida:</h3>
-        <input type="text" id="nomeAluno" placeholder="Seu Nome" required><br><br>
-        <textarea id="textoDuvida" placeholder="Digite sua dúvida aqui..." rows="4" required></textarea><br><br>
-        <button type="submit">Enviar Dúvida</button>
-    </form>
+    <h1 class="titulo">Iluminismo - Dúvidas</h1>
 
-    <hr>
+    <nav class="botao">
+      <a href="..\proj_sistemas_web_filo-ilum.html">
+        <button>Voltar</button> 
+      </a>
+    </nav>
+  </header>
 
-    <h2>Discussão / Dúvidas dos Alunos</h2>
-    <div id="listaDuvidas">
-        </div>
+  <form id="formDuvida" data-content-id="filo-ilum">
+    <h3>Envie sua Dúvida:</h3>
+    <input type="text" id="nomeAluno" placeholder="Seu Nome" required><br><br>
+    <textarea id="textoDuvida" placeholder="Digite sua dúvida aqui..." rows="4" required></textarea><br><br>
+    <button type="submit">Enviar Dúvida</button>
+  </form>
 
-    <script src="../../../js/script_duvidas.js"></script> 
+  <hr>
+
+  <h2>Discussão / Dúvidas dos Alunos</h2>
+
+  <div id="listaDuvidas"></div>
+
+  <script src="../../../js/script_duvidas.js"></script> 
+
 </body>
+
 </html>

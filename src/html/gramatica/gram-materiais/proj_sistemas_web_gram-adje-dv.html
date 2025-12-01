@@ -5,18 +5,45 @@
     <meta charset="UTF-8">
     <title>Dúvidas - Adjetivo</title>
     <meta name="description" content="Tire suas dúvidas sobre adjetivos! Envie perguntas, participe de discussões e aprimore seu conhecimento sobre gramática. Ideal para estudantes que desejam entender melhor o uso e as classificações dos adjetivos.">
-    </head>
+    <link rel="stylesheet" href="..\..\..\css\gramatica\gram-materiais\style_gram-adje-dv.css">
+</head>
 
 <body>
 
-    <h1>Dúvidas - Adjetivo</h1>
+  <header>
+    <div class="logo">
+      <img src="..\..\..\..\assets\logo_studybuddy_gram.png" alt="StudyBuddy Logo Gramática">
+    </div>
 
-    <form id="formDuvida" data-content-id="gram-adje">
-        <h3>Envie sua Dúvida:</h3>
-        <input type="text" id="nomeAluno" placeholder="Seu Nome" required><br><br>
-        <textarea id="textoDuvida" placeholder="Digite sua dúvida aqui..." rows="4" required></textarea><br><br>
-        <button type="submit">Enviar Dúvida</button>
-    </form>
+    <h1 class="titulo">Adjetivos - Dúvidas</h1>
+
+    <nav class="botao">
+      <a href="..\proj_sistemas_web_gram-adje.html">
+        <button>Voltar</button> 
+      </a>
+    </nav>
+  </header>
+
+    <div class="containerdv">
+
+      <form id="formDuvida" data-content-id="gram-adje">
+
+        <h2 class="textoenviar">Envie sua Dúvida:</h3>
+
+        <div class="infos">
+          <label for="nomeAluno">Nome: </label>
+          <input type="text" id="nomeAluno" placeholder="Seu Nome" required><br><br>
+        </div>
+
+        <div class="infos">
+          <label for="textoDuvida">Dúvida: </label>
+          <textarea id="textoDuvida" placeholder="Digite sua dúvida aqui..." rows="4" required></textarea><br><br>
+        </div>
+          
+        <input id="botao" type="submit" value="Enviar dúvida">
+
+      </form>
+    </div>
 
     <hr>
 

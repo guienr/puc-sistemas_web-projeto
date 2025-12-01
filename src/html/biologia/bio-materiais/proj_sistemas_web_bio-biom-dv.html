@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dúvidas - Biomas</title>
+    <meta name="description" content="Página interativa para tirar dúvidas sobre biomas. Os alunos podem enviar perguntas, participar de discussões e aprofundar seus conhecimentos sobre os diferentes tipos de biomas, suas características, fauna, flora e importância ecológica. Ideal para quem estuda biologia e temas ambientais.">
+    <link rel="stylesheet" href="..\..\..\css\biologia\bio-materiais\style_bio-biom-dv.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="..\..\..\..\assets\logo_studybuddy_bio.png" alt="StudyBuddy Logo Biologia">
+    </div>
+
+    <h1 class="titulo">Biomas - Dúvidas</h1>
+
+    <nav class="botao">
+      <a href="..\proj_sistemas_web_bio-biom.html">
+        <button>Voltar</button> 
+      </a>
+    </nav>
+  </header>
+
+    <div class="containerdv">
+
+      <form id="formDuvida" data-content-id="bio-biom">
+
+        <h2 class="textoenviar">Envie sua Dúvida:</h3>
+
+        <div class="infos">
+          <label for="nomeAluno">Nome: </label>
+          <input type="text" id="nomeAluno" placeholder="Seu Nome" required><br><br>
+        </div>
+
+        <div class="infos">
+          <label for="textoDuvida">Dúvida: </label>
+          <textarea id="textoDuvida" placeholder="Digite sua dúvida aqui..." rows="4" required></textarea><br><br>
+        </div>
+          
+        <input id="botao" type="submit" value="Enviar dúvida">
+
+      </form>
+    </div>
+    
+  <hr>
+
+  <h2>Discussão / Dúvidas dos Alunos</h2>
+  
+  <div id="listaDuvidas"></div>
+
+  <script src="../../../js/script_duvidas.js"></script> 
+  
+</body>
+
+</html>

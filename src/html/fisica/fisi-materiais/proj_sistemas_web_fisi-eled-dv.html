@@ -5,18 +5,46 @@
     <meta charset="UTF-8">
     <title>Dúvidas - Eletrodinâmica</title>
     <meta name="description" content="Envie e consulte dúvidas sobre Eletrodinâmica em um espaço interativo de discussão entre alunos. Ideal para esclarecer conceitos como corrente elétrica, resistência, leis de Ohm e se preparar para provas e vestibulares.">
-    </head>
+    <link rel="stylesheet" href="..\..\..\css\fisica\fisi-materiais\style_fisi-eled-dv.css">    
+</head>
 
 <body>
 
-    <h1>Dúvidas - Eletrodinâmica</h1>
+  <header>
+    <div class="logo">
+      <img src="..\..\..\..\assets\logo_studybuddy_fisi.png" alt="StudyBuddy Logo Filosofia">
+    </div>
 
-    <form id="formDuvida" data-content-id="fisi-eled">
-        <h3>Envie sua Dúvida:</h3>
-        <input type="text" id="nomeAluno" placeholder="Seu Nome" required><br><br>
-        <textarea id="textoDuvida" placeholder="Digite sua dúvida aqui..." rows="4" required></textarea><br><br>
-        <button type="submit">Enviar Dúvida</button>
-    </form>
+    <h1 class="titulo">Eletrodinâmica - Dúvidas</h1>
+
+    <nav class="botao">
+      <a href="..\proj_sistemas_web_fisi-eled.html">
+        <button>Voltar</button> 
+      </a>
+    </nav>
+  </header>
+
+
+    <div class="containerdv">
+
+      <form id="formDuvida" data-content-id="fisi-eled">
+
+        <h2 class="textoenviar">Envie sua Dúvida:</h3>
+
+        <div class="infos">
+          <label for="nomeAluno">Nome: </label>
+          <input type="text" id="nomeAluno" placeholder="Seu Nome" required><br><br>
+        </div>
+
+        <div class="infos">
+          <label for="textoDuvida">Dúvida: </label>
+          <textarea id="textoDuvida" placeholder="Digite sua dúvida aqui..." rows="4" required></textarea><br><br>
+        </div>
+          
+        <input id="botao" type="submit" value="Enviar dúvida">
+
+      </form>
+    </div>
 
     <hr>
 

@@ -4,32 +4,51 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>MHS</title>
-    
+    <title>Movimento Harmônico Simples</title>
+    <link rel="stylesheet" href="..\..\css\fisica\style_fisi-mhs.css">    
 </head>
 
 <body>
 
-    <h1>Física - MHS</h1>
-    <h2>Selecione o tipo de material que deseja estudar</h2>
+    <header>
+        <div class="logo">
+            <img src="..\..\..\assets\logo_studybuddy_2.png" alt="StudyBuddy Logo 2">
+        </div>
 
-    <a href="fisi-materiais/proj_sistemas_web_fisi-mhs-mt.html">
-        <button>Material Teórico</button>
-    </a>
+        <h1 class="titulo">Movimento Harmônico Simples</h1>
 
-    <a href="fisi-materiais/proj_sistemas_web_fisi-mhs-au.html">
-        <button>Vídeos Aulas</button>
-    </a>
+        <nav class="botao">
+            <a href="proj_sistemas_web_fisi-conteudos.html">
+                <button>Voltar</button>
+            </a>
+        </nav>
+    </header>
 
-    <a href="fisi-materiais/proj_sistemas_web_fisi-mhs-ex.html">
-        <button>Exercícios</button>
-    </a>
+    <div class="container">
 
-    <a href="fisi-materiais/proj_sistemas_web_fisi-mhs-dv.html">
-        <button>Dúvidas</button>
-    </a>
+        <h2 class="texto_selecione">Selecione o tipo de material que deseja acessar</h2>
 
-<script src="../../js/script_validador1.js"></script>
+        <div class="grid">
+
+            <a href="fisi-materiais/proj_sistemas_web_fisi-mhs-mt.html">
+                <button class="tipo">Material Teórico</button>
+            </a>
+            <a href="fisi-materiais/proj_sistemas_web_fisi-mhs-au.html">
+                <button class="tipo">Vídeos Aulas</button>
+            </a>
+
+            <a href="fisi-materiais/proj_sistemas_web_fisi-mhs-ex.html">
+                <button class="tipo">Exercícios</button>
+            </a>
+            <a href="fisi-materiais/proj_sistemas_web_fisi-mhs-dv.html">
+                <button class="tipo">Dúvidas</button>
+            </a>
+
+        </div>
+    </div>
+
+    <script src="../../js/script_validador1.js"></script>
+
 </body>
 
 </html>
