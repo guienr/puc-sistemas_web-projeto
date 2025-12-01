@@ -32,14 +32,14 @@ Link para o protótipo no Figma: Disponível na pasta docs no github com nome St
 
 
 ## Integrantes
-- Guilherme Eiki – Front-end e Arquiteto
+- Guilherme Eiki – Front-end, Arquiteto e Integração do Código Fonte
 - Rafael Palma – Front-end e Design
 - João Vitor Avanzo – Front-end e Documentação
 
 ## Status do Projeto
 Em desenvolvimento
 
-Primeira versão estimada para: 26/11/2025
+Primeira versão estimada para: 03/12/2025
 
 ## Instruções de Instalação e Execução
 - Pré-requisitos: Você deve ter o Git instalado em seu computador.

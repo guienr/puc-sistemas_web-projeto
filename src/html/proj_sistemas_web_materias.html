@@ -4,8 +4,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>StudyBuddy</title>
-  <meta name="description" content="Plataforma educacional completa que oferece resumos, textos explicativos, exercícios resolvidos, simulados interativos e suporte para tirar dúvidas. Ideal para estudantes que buscam reforço escolar, preparação para vestibulares, concursos ou simplesmente aprender de forma prática e eficiente">
+  <title>StudyBuddy - Matérias</title>
+  <meta name="description" content="Área do StudyBuddy para acessar as matérias e favoritá-las">
   <link rel="stylesheet" href="..\..\src\css\style_materias.css">
 </head>
 
@@ -65,6 +65,7 @@
       <button class="estrela" onclick="favoritarMateria('Matematica', this)">★</button>
     </div>
 
+    <h2>Ciências Humanas:</h2>
     <div class="materia-card materia-historia">
       <a href="historia\proj_sistemas_web_hist-conteudos.html">
         <button>História</button>
@@ -124,8 +125,11 @@
     </div>
         
 
-  </div> <div id="mensagemFavorito"></div>
+  </div> 
+  
+  <div id="mensagemFavorito"></div>
 
-  <script src="..\..\src\js\script_materias.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+  <script src="../js/script_materias.js"></script>
 </body>
 </html>
