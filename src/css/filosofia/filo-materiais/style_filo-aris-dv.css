@@ -9,7 +9,9 @@ body {
     background-color: #f0f0f0;
     color: #111;
     padding: 0;
+    margin-bottom: 50px;
 }
+
 
 
 header {
@@ -45,7 +47,6 @@ header .botao {
     gap: 20px;
 }
 
-
 header .botao button {
     background-color: #d5d5d5;
     color: #1D1D1D;
@@ -57,7 +58,9 @@ header .botao button {
     cursor: pointer;
 }
 
-.containerdv {
+
+
+.containerdv{
     background-color: #fff;
     padding: 90px;
     border-radius: 10px;
@@ -66,14 +69,15 @@ header .botao button {
     max-width: 750px;
     text-align: left;
     margin: auto;
+    margin-top: 30px;
     margin-bottom: 30px;
-
 }
 
-h2 {
+.envie {
     text-align: center;
     color: #333;
     margin-bottom: 50px;
+    text-decoration: underline;
 }
 
 .infos {
@@ -87,7 +91,7 @@ label {
     color: #555;
 }
 
-input[type="text"] {
+#formDuvida input[type="text"] {
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -95,7 +99,16 @@ input[type="text"] {
     box-sizing: border-box;
 }
 
-input[type="submit"] {
+#textoDuvida {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+#formDuvida input[type="submit"] {
     width: 100%;
     padding: 10px;
     background-color: #313e5c;
@@ -105,4 +118,50 @@ input[type="submit"] {
     cursor: pointer;
     font-size: 18px;
     margin-top: 10px;
+}
+
+
+
+.discussao {
+    text-align: center;
+    color: #333;  
+}
+.ordem {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.info-vazio {
+    text-align: center;
+    color: #333;
+}
+
+#listaDuvidas {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    color: #1D1D1D;
+}
+
+.formResposta textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+.formResposta button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #313e5c;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

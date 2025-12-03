@@ -20,6 +20,7 @@ header {
     padding: 10px 30px;
     border-radius: 20px;
     margin: 10px;
+    margin-bottom: 50px;
 }
 
 
@@ -40,13 +41,12 @@ header .logo img {
     flex-grow: 1;
 }
 
-header .botao {
+header .botoes_superiores {
     display: flex;
     gap: 20px;
 }
 
-
-header .botao button {
+header .botao_materias {
     background-color: #a56506;
     color: #fff;
     border: none;
@@ -55,4 +55,74 @@ header .botao button {
     margin-left: 40px;
     font-size: 14px;
     cursor: pointer;
+} 
+header .botao_areausuario {
+    background-color: #d5d5d5;
+    color: #1D1D1D;
+    border: none;
+    padding: 15px 80px;
+    border-radius: 25px;
+    margin-left: 40px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.textoselecione {
+    text-align: center;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.simulado1 {
+    width: 100%;
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.simulado2 {
+    width: 100%;
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.simulado3 {
+    width: 100%;
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.simulado4 {
+    width: 100%;
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.simulado5 {
+    width: 100%;
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.simulado6 {
+    width: 100%;
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
 }

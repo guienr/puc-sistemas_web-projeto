@@ -22,37 +22,44 @@
         <h1><u>Esqueci minha senha</u></h1>
         <form id="formulario">
         
-        <div class="infos">
-            <label for="email">Digite seu e-mail:</label>
-            <input type="email" id="email" name="email" placeholder="exemplo@email.com">
-        </div>
+            <div class="infos">
+                <label for="email">Digite seu e-mail:</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@email.com">
+            </div>
 
-        <div class="infos">
-            <input id="botao" type="submit" value="Recuperar senha">
-        </div>
+            <div class="infos">
+                <input id="botao" type="submit" value="Recuperar senha">
+            </div>
 
         </form>
+
+        
+        <div id="areaRedefinicao" style="display:none;">
+        <br><h2>Redefinir Senha</h2><br>
+        <form id="formularioRedefinir">
+
+            <div class="infos">
+                <label for="novaSenha">Nova Senha:</label>
+                <input type="password" id="novaSenha" name="novaSenha" placeholder="Mínimo 8 caracteres">
+            </div>
+
+            <div class="infos">
+                <label for="confirmaSenha">Confirmar Nova Senha:</label>
+                <input type="password" id="confirmaSenha" name="confirmaSenha" placeholder="Deve ser igual à senha digitada no campo anterior">
+            </div>
+
+            <div class="infos">
+                <input type="submit" value="Salvar Nova Senha">
+            </div>
+        </form>
+        </div>
 
         <div class="botao_voltar">
             <a href="proj_sistemas_web_login.html">
                 <button>Voltar</button>
             </a>
         </div>
-        
     </div>
-
-    <div id="areaRedefinicao" style="display:none;">
-    <h2>Redefinir Senha</h2>
-    <form id="formularioRedefinir">
-        <label for="novaSenha">Nova Senha:</label>
-        <input type="password" id="novaSenha" name="novaSenha" placeholder="Mínimo 8 caracteres">
-
-        <label for="confirmaSenha">Confirmar Nova Senha:</label>
-        <input type="password" id="confirmaSenha" name="confirmaSenha">
-
-        <input type="submit" value="Salvar Nova Senha">
-    </form>
-</div>
 
     <div id="mensagem"></div>
 

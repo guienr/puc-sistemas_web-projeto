@@ -73,6 +73,17 @@ function favoritarMateria(materia, botao) {
 
     listaUsuarios[indiceUsuario] = usuario; 
     localStorage.setItem("usuarios", JSON.stringify(listaUsuarios));
+
+    mensagemDiv.classList.add('backgroundMensagemAtiva');
+    mensagemDiv.style.opacity = 1;
+
+    setTimeout(() => {
+        mensagemDiv.style.opacity = 0;
+    }, 1500);
+    setTimeout(() => {
+         mensagemDiv.textContent = '';
+         mensagemDiv.classList.remove('mensagem-ativa');
+    }, 2500);
 }
 
 

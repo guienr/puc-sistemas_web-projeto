@@ -69,16 +69,21 @@ function jwt_decode(token) {
                     <p><strong>Aluno(a):</strong> ${duvida.nome}</p>
                 </div>
                 <p class="duvida-texto">${duvida.texto}</p>
+                <br>
             `;
 
             if (duvida.resposta) {
-                html += `<div class="resposta-box">${duvida.resposta}</div>`; 
+                html += `
+                    <div class="resposta-box">${duvida.resposta}</div>
+                    <br> <hr> <br>
+                `; 
             } else {
                 html += `
                     <form class="formResposta" data-index="${indexOriginal}">
                         <textarea placeholder="Responder como Professor(a) ${nomeUsuarioLogado}..." rows="2" required></textarea>
                         <button type="submit">Responder</button>
                     </form>
+                    <br> <hr> <br>
                 `;
             }
 

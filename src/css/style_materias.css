@@ -12,6 +12,7 @@ body {
 }
 
 
+
 header {
     background-color: #1D1D1D;
     display: flex;
@@ -20,8 +21,8 @@ header {
     padding: 10px 30px;
     border-radius: 20px;
     margin: 10px;
+    margin-bottom: 50px;
 }
-
 
 header .logo {
     display: flex;
@@ -33,20 +34,19 @@ header .logo img {
     height: auto;
 }
 
-.titulo-materias {
+.titulo {
     color: #d5d5d5;
     text-align: center;
     margin: 0;
     flex-grow: 1;
 }
 
-header .botao {
+header .botoes_superiores {
     display: flex;
     gap: 20px;
 }
 
-
-header .botao button {
+header .botao_simulados {
     background-color: #a56506;
     color: #fff;
     border: none;
@@ -55,6 +55,32 @@ header .botao button {
     margin-left: 40px;
     font-size: 14px;
     cursor: pointer;
+} 
+
+header .botao_areausuario {
+    background-color: #d5d5d5;
+    color: #1D1D1D;
+    border: none;
+    padding: 15px 80px;
+    border-radius: 25px;
+    margin-left: 40px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    padding: 0 40px;
+    width: 100%;
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 h2 {
@@ -62,42 +88,33 @@ h2 {
     font-size: 1.5em;
     font-weight: bold;
     color: #333;
-    margin: 30px 40px 15px 40px;
+    margin: 10px 40px 0px 0px;
     text-decoration: underline;
     grid-column: 1 / -1;
 }
 
-
-.materias-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px; /* Espaço entre os cards */
-    padding: 0 40px;
-}
-
-
-.materia-card {
+.botao_materia {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
     height: 180px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s, box-shadow 0.2s;
     margin-bottom: 30px;
 }
 
-.materia-card:hover {
+.botao_materia:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.materia-card a {
+.botao_materia a {
     text-decoration: none;
     display: block;
     height: 100%;
 }
 
-.materia-card a button {
+.botao_materia a button {
     width: 100%;
     height: 100%;
     border: none;
@@ -112,18 +129,17 @@ h2 {
     align-items: flex-end;
 }
 
-
-.materia-gramatica { background-color: #850606; }
-.materia-literatura { background-color: #850606; }
-.materia-ingles { background-color: #195d5d; }
-.materia-matematica { background-color: #080a37; }
-.materia-historia { background-color: #30134a; }
-.materia-geografia { background-color: #954600; }
-.materia-filosofia { background-color: #313e5c; }
-.materia-sociologia { background-color: #570416; }
-.materia-biologia { background-color: #165810; }
-.materia-fisica { background-color: #34909a; }
-.materia-quimica { background-color: #8d0036; }
+.gramatica { background-color: #850606; }
+.literatura { background-color: #850606; }
+.ingles { background-color: #195d5d; }
+.matematica { background-color: #080a37; }
+.historia { background-color: #30134a; }
+.geografia { background-color: #954600; }
+.filosofia { background-color: #313e5c; }
+.sociologia { background-color: #570416; }
+.biologia { background-color: #165810; }
+.fisica { background-color: #34909a; }
+.quimica { background-color: #8d0036; }
 
 
 .estrela {
@@ -154,12 +170,16 @@ h2 {
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.8);
     color: #d5d5d5;
-    padding: 10px 20px;
     border-radius: 5px;
     z-index: 100;
-    transition: opacity 0.5s;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.backgroundMensagemAtiva {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
 }
 
 @media (max-width: 900px) {

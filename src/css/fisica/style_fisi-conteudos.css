@@ -9,7 +9,9 @@ body {
     background-color: #f0f0f0;
     color: #111;
     padding: 0;
+    margin-bottom: 50px;
 }
+
 
 
 header {
@@ -45,7 +47,6 @@ header .botao {
     gap: 20px;
 }
 
-
 header .botao button {
     background-color: #d5d5d5;
     color: #1D1D1D;
@@ -57,13 +58,13 @@ header .botao button {
     cursor: pointer;
 }
 
+
+
 .container {
     width: 100%;
-    max-width: 1900px;
     background-color: #34909a;
     padding: 100px;
     border-radius: 20px;
-    margin: 10px;
 }
 
 .grid {
@@ -83,4 +84,11 @@ header .botao button {
     font-size: 16px;
     font-weight: bold;
     text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.materia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }

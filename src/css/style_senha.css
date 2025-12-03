@@ -9,6 +9,7 @@ body {
     background-color: #f0f0f0;
     color: #111;
     padding: 0;
+    margin-bottom: 50px;
 }
 
 
@@ -22,7 +23,6 @@ header {
     margin: 10px;
     margin-bottom: 30px;
 }
-
 
 header .logo {
     display: flex;
@@ -44,7 +44,6 @@ header .logo img {
     max-width: 750px;
     text-align: left;
     margin: auto;
-
 }
 
 h1 {
@@ -84,6 +83,14 @@ input[type="submit"] {
     margin-top: 10px;
 }
 
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
 .botao_voltar {
     text-align: center;
 }
@@ -98,7 +105,6 @@ input[type="submit"] {
     cursor: pointer;
     font-size: 18px;
 }
-
 
 #mensagem {
     display: flex;

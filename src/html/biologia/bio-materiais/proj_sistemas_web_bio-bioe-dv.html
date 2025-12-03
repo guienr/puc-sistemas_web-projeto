@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Dúvidas - Bioenergética</title>
+    <title>Bioenergética - Dúvidas</title>
     <meta name="description" content="Espaço dedicado ao esclarecimento de dúvidas sobre bioenergética. Os alunos podem enviar perguntas, participar de discussões e aprofundar seus conhecimentos sobre os processos energéticos biológicos. Ideal para quem busca apoio em estudos de biologia.">
     <link rel="stylesheet" href="..\..\..\css\biologia\bio-materiais\style_bio-bioe-dv.css">
 </head>
@@ -28,7 +28,7 @@
 
       <form id="formDuvida" data-content-id="bio-bioe">
 
-        <h2 class="textoenviar">Envie sua Dúvida:</h3>
+        <h2 class="envie">Envie sua Dúvida:</h2>
 
         <div class="infos">
           <label for="nomeAluno">Nome: </label>
@@ -47,8 +47,12 @@
 
     <hr>
 
-    <h2>Discussão / Dúvidas dos Alunos</h2>
-    <div id="listaDuvidas"></div>
+    <div class="containerdv">
+      <h2 class="discussao">Discussão - Dúvidas dos Alunos</h2>
+      <p class="ordem">(mais recentes primeiro)</p>
+      <hr>
+      <div id="listaDuvidas"></div>
+    </div>
 
     <script src="../../../js/script_duvidas.js"></script> 
 </body>

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Dúvidas - Aristóteles</title>
+    <title>Aristóteles - Dúvidas</title>
     <meta name="description" content="Envie e consulte dúvidas sobre Aristóteles e sua filosofia. Espaço interativo para estudantes discutirem temas como ética, política e lógica aristotélica. Ideal para reforço escolar e preparação para vestibulares.">
     <link rel="stylesheet" href="..\..\..\css\filosofia\filo-materiais\style_filo-aris-dv.css">
   </head>
@@ -15,7 +15,7 @@
       <img src="..\..\..\..\assets\logo_studybuddy_filo.png" alt="StudyBuddy Logo Filosofia">
     </div>
 
-    <h1 class="titulo">Aristóteles - Dúvidas</h1>
+    <h1 class="titulo">Aristóteles - Dúvidas</h1> 
 
     <nav class="botao">
       <a href="..\proj_sistemas_web_filo-aris.html">
@@ -29,7 +29,7 @@
 
       <form id="formDuvida" data-content-id="filo-aris">
 
-        <h2 class="textoenviar">Envie sua Dúvida:</h3>
+        <h2 class="envie">Envie sua Dúvida:</h3>
 
         <div class="infos">
           <label for="nomeAluno">Nome: </label>
@@ -48,9 +48,12 @@
 
     <hr>
 
-    <h2>Discussão / Dúvidas dos Alunos</h2>
-    <div id="listaDuvidas">
-        </div>
+  <div class="containerdv">
+    <h2 class="discussao">Discussão - Dúvidas dos Alunos</h2>
+    <p class="ordem">(mais recentes primeiro)</p>
+    <hr>
+    <div id="listaDuvidas"></div>
+  </div>
 
     <script src="../../../js/script_duvidas.js"></script> 
 </body>

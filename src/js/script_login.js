@@ -27,7 +27,7 @@ formulario.addEventListener("submit", function (event) {
     const listaUsuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
     const usuarioEncontrado = listaUsuarios.find(u => u.email === emailDigitado);
 
-    const SECRET_KEY = "SuaChaveSecretaForteeUnicaAqui123!"
+    const SECRET_KEY = "SuaChaveS3cr3t4StudyBuddy"
 
     if (usuarioEncontrado && usuarioEncontrado.senha === senhaHashedDigitada) {
 

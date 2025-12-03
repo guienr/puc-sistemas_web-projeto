@@ -9,6 +9,7 @@ body {
     background-color: #f0f0f0;
     color: #111;
     padding: 0;
+    margin-bottom: 50px;
 }
 
 
@@ -65,100 +66,90 @@ header .botao button {
 
 .exercicio1 {
     width: 100%;
-    max-width: 1900px;
     background-color: #fff;
     padding: 100px;
     border-radius: 20px;
-    margin: 10px;
     margin-bottom: 30px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .exercicio2 {
     width: 100%;
-    max-width: 1900px;
     background-color: #fff;
     padding: 100px;
     border-radius: 20px;
-    margin: 10px;
     margin-bottom: 30px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .exercicio3 {
     width: 100%;
-    max-width: 1900px;
     background-color: #fff;
     padding: 100px;
     border-radius: 20px;
-    margin: 10px;
     margin-bottom: 30px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .exercicio4 {
     width: 100%;
-    max-width: 1900px;
     background-color: #fff;
     padding: 100px;
     border-radius: 20px;
-    margin: 10px;
     margin-bottom: 30px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .exercicio5 {
     width: 100%;
-    max-width: 1900px;
     background-color: #fff;
     padding: 100px;
     border-radius: 20px;
-    margin: 10px;
     margin-bottom: 30px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .exercicio6 {
     width: 100%;
-    max-width: 1900px;
     background-color: #fff;
     padding: 100px;
     border-radius: 20px;
-    margin: 10px;
     margin-bottom: 30px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .exercicio7 {
     width: 100%;
-    max-width: 1900px;
     background-color: #fff;
     padding: 100px;
     border-radius: 20px;
-    margin: 10px;
     margin-bottom: 30px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .exercicio8 {
     width: 100%;
-    max-width: 1900px;
     background-color: #fff;
     padding: 100px;
     border-radius: 20px;
-    margin: 10px;
     margin-bottom: 30px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .exercicio9 {
     width: 100%;
-    max-width: 1900px;
     background-color: #fff;
     padding: 100px;
     border-radius: 20px;
-    margin: 10px;
     margin-bottom: 30px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .exercicio10 {
     width: 100%;
-    max-width: 1900px;
     background-color: #fff;
     padding: 100px;
     border-radius: 20px;
-    margin: 10px;
     margin-bottom: 30px;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
 }

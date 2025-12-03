@@ -59,14 +59,24 @@ header .botao button {
 
 .material {
     width: 100%;
-    max-width: 1900px;
     background-color: #fff;
     padding: 100px;
     border-radius: 20px;
-    margin: 10px;
     margin-bottom: 30px;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.imagem {
+    text-align: center;
+}
+
+.imagens {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px; 
 }
 
 .subtitulo {

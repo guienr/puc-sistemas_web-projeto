@@ -91,6 +91,13 @@ label {
     cursor: pointer;
     font-size: 18px;
     margin-top: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.botao_alterar button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
 .botao_sair {
@@ -106,4 +113,11 @@ label {
     cursor: pointer;
     font-size: 18px;
     margin-top: 10px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.botao_sair button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }

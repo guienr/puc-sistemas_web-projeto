@@ -59,11 +59,10 @@ header .botao button {
 
 .container {
     width: 100%;
-    max-width: 1900px;
     background-color: #570416;
     padding: 100px;
     border-radius: 20px;
-    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .texto_selecione {
@@ -90,4 +89,11 @@ header .botao button {
     font-size: 16px;
     font-weight: bold;
     text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tipo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }

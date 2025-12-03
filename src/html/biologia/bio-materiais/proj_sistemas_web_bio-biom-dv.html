@@ -24,32 +24,35 @@
     </nav>
   </header>
 
-    <div class="containerdv">
+  <div class="containerdv">
 
-      <form id="formDuvida" data-content-id="bio-biom">
+    <form id="formDuvida" data-content-id="bio-biom">
 
-        <h2 class="textoenviar">Envie sua Dúvida:</h3>
+      <h2 class="envie">Envie sua Dúvida:</h3>
 
-        <div class="infos">
-          <label for="nomeAluno">Nome: </label>
-          <input type="text" id="nomeAluno" placeholder="Seu Nome" required><br><br>
-        </div>
+      <div class="infos">
+        <label for="nomeAluno">Nome: </label>
+        <input type="text" id="nomeAluno" placeholder="Seu Nome" required><br><br>
+      </div>
 
-        <div class="infos">
-          <label for="textoDuvida">Dúvida: </label>
-          <textarea id="textoDuvida" placeholder="Digite sua dúvida aqui..." rows="4" required></textarea><br><br>
-        </div>
+      <div class="infos">
+        <label for="textoDuvida">Dúvida: </label>
+        <textarea id="textoDuvida" placeholder="Digite sua dúvida aqui..." rows="4" required></textarea><br><br>
+      </div>
           
-        <input id="botao" type="submit" value="Enviar dúvida">
+      <input id="botao" type="submit" value="Enviar dúvida">
 
-      </form>
-    </div>
+    </form>
+  </div>
     
   <hr>
 
-  <h2>Discussão / Dúvidas dos Alunos</h2>
-  
-  <div id="listaDuvidas"></div>
+  <div class="containerdv">
+    <h2 class="discussao">Discussão - Dúvidas dos Alunos</h2>
+    <p class="ordem">(mais recentes primeiro)</p>
+    <hr>
+    <div id="listaDuvidas"></div>
+  </div>
 
   <script src="../../../js/script_duvidas.js"></script> 
   

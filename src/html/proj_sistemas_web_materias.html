@@ -17,114 +17,109 @@
       <img src="..\..\assets\logo_studybuddy.png" alt="StudyBuddy Logo">
     </div>
 
-    <h1 class="titulo-materias">Escolha a matéria que deseja estudar</h1>
+    <h1 class="titulo">Matérias</h1>
 
-    <div class="botao">
+    <nav class="botoes_superiores">
+      <a href="proj_sistemas_web_simulados.html">
+        <button class="botao_simulados">Simulados</button>
+      </a>
       <a href="proj_sistemas_web_usuario.html">
-        <button>Voltar</button>
-      </a>
-    </div>
+        <button class="botao_areausuario">Área do Usuário</button>
+      </a> 
+    </nav>
+
   </header>
+ 
+
+  <div class="container">         
+
+    <h2>LINGUAGENS:</h2>
+          
+      <div class="botao_materia gramatica">
+        <a href="gramatica\proj_sistemas_web_gram-conteudos.html">
+          <button>Gramática</button>
+        </a>
+        <button class="estrela" onclick="favoritarMateria('Gramática', this)">★</button>
+      </div>
 
 
-  <div class="materias-container"> 
+      <div class="botao_materia literatura">
+        <a href="literatura\proj_sistemas_web_lit-conteudos.html">
+          <button>Literatura</button>
+        </a>
+        <button class="estrela" onclick="favoritarMateria('Literatura', this)">★</button>
+      </div>
+
+
+      <div class="botao_materia ingles">
+        <a href="ingles\proj_sistemas_web_ing-conteudos.html">
+          <button>Língua Inglesa</button>
+        </a>
+        <button class="estrela" onclick="favoritarMateria('Língua Inglesa', this)">★</button>
+      </div>
+
+
+    <h2>CIÊNCIAS HUMANAS:</h2>
+
+      <div class="botao_materia historia">
+        <a href="historia\proj_sistemas_web_hist-conteudos.html">
+          <button>História</button>
+        </a>
+        <button class="estrela" onclick="favoritarMateria('História', this)">★</button>
+      </div>
+
+      <div class="botao_materia geografia">
+        <a href="geografia\proj_sistemas_web_geo-conteudos.html">
+          <button>Geografia</button>
+        </a>
+        <button class="estrela" onclick="favoritarMateria('Geografia', this)">★</button>
+      </div>
+
+      <div class="botao_materia filosofia">
+        <a href="filosofia\proj_sistemas_web_filo-conteudos.html">
+          <button>Filosofia</button>
+        </a>
+        <button class="estrela" onclick="favoritarMateria('Filosofia', this)">★</button>
+      </div>
+
+      <div class="botao_materia sociologia">
+        <a href="sociologia\proj_sistemas_web_socio-conteudos.html">
+          <button>Sociologia</button>
+        </a>
+        <button class="estrela" onclick="favoritarMateria('Sociologia', this)">★</button>
+      </div>
+
+
+    <h2>MATEMÁTICA E CIÊNCIAS DA NATUREZA:</h2>
+
+      <div class="botao_materia matematica">
+        <a href="matematica\proj_sistemas_web_mat-conteudos.html">
+          <button>Matemática</button>
+        </a>
+        <button class="estrela" onclick="favoritarMateria('Matematica', this)">★</button>
+      </div>
+
+      <div class="botao_materia biologia">
+        <a href="biologia\proj_sistemas_web_bio-conteudos.html">
+          <button>Biologia</button>
+        </a>
+        <button class="estrela" onclick="favoritarMateria('Biologia', this)">★</button>
+      </div>
+
+      <div class="botao_materia fisica">
+        <a href="fisica\proj_sistemas_web_fisi-conteudos.html">
+          <button>Física</button>
+        </a>
+        <button class="estrela" onclick="favoritarMateria('Física', this)">★</button>
+      </div>
+
+      <div class="botao_materia quimica">
+        <a href="quimica\proj_sistemas_web_quim-conteudos.html">
+          <button>Química</button>
+        </a>
+        <button class="estrela" onclick="favoritarMateria('Química', this)">★</button>
+      </div>
         
-
-  <h2>Linguagens:</h2>
-        
-    <div class="materia-card materia-gramatica">
-      <a href="gramatica\proj_sistemas_web_gram-conteudos.html">
-        <button>Gramática</button>
-      </a>
-      <button class="estrela" onclick="favoritarMateria('Gramática', this)">★</button>
-    </div>
-
-
-    <div class="materia-card materia-literatura">
-      <a href="literatura\proj_sistemas_web_lit-conteudos.html">
-        <button>Literatura</button>
-      </a>
-      <button class="estrela" onclick="favoritarMateria('Literatura', this)">★</button>
-    </div>
-
-
-    <div class="materia-card materia-ingles">
-      <a href="ingles\proj_sistemas_web_ing-conteudos.html">
-        <button>Língua Inglesa</button>
-      </a>
-      <button class="estrela" onclick="favoritarMateria('Língua Inglesa', this)">★</button>
-    </div>
-
-      
-
-    <h2>Matemática:</h2>
-    <div class="materia-card materia-matematica">
-      <a href="matematica\proj_sistemas_web_mat-conteudos.html">
-        <button>Matemática</button>
-      </a>
-      <button class="estrela" onclick="favoritarMateria('Matematica', this)">★</button>
-    </div>
-
-    <h2>Ciências Humanas:</h2>
-    <div class="materia-card materia-historia">
-      <a href="historia\proj_sistemas_web_hist-conteudos.html">
-        <button>História</button>
-      </a>
-      <button class="estrela" onclick="favoritarMateria('História', this)">★</button>
-    </div>
-
-
-    <div class="materia-card materia-geografia">
-      <a href="geografia\proj_sistemas_web_geo-conteudos.html">
-        <button>Geografia</button>
-      </a>
-      <button class="estrela" onclick="favoritarMateria('Geografia', this)">★</button>
-    </div>
-
-
-    <div class="materia-card materia-filosofia">
-      <a href="filosofia\proj_sistemas_web_filo-conteudos.html">
-        <button>Filosofia</button>
-      </a>
-      <button class="estrela" onclick="favoritarMateria('Filosofia', this)">★</button>
-    </div>
-
-
-    <div class="materia-card materia-sociologia">
-      <a href="sociologia\proj_sistemas_web_socio-conteudos.html">
-        <button>Sociologia</button>
-      </a>
-      <button class="estrela" onclick="favoritarMateria('Sociologia', this)">★</button>
-    </div>
-
-
-
-    <h2>Ciências da Natureza:</h2>
-
-    <div class="materia-card materia-biologia">
-      <a href="biologia\proj_sistemas_web_bio-conteudos.html">
-        <button>Biologia</button>
-      </a>
-      <button class="estrela" onclick="favoritarMateria('Biologia', this)">★</button>
-    </div>
-
-
-    <div class="materia-card materia-fisica">
-      <a href="fisica\proj_sistemas_web_fisi-conteudos.html">
-        <button>Física</button>
-      </a>
-      <button class="estrela" onclick="favoritarMateria('Física', this)">★</button>
-    </div>
-
-
-    <div class="materia-card materia-quimica">
-      <a href="quimica\proj_sistemas_web_quim-conteudos.html">
-        <button>Química</button>
-      </a>
-      <button class="estrela" onclick="favoritarMateria('Química', this)">★</button>
-    </div>
-        
-
   </div> 
   
   <div id="mensagemFavorito"></div>

@@ -12,6 +12,7 @@ body {
 }
 
 
+
 header {
     background-color: #1D1D1D;
     display: flex;
@@ -45,7 +46,6 @@ header .botao {
     gap: 20px;
 }
 
-
 header .botao button {
     background-color: #d5d5d5;
     color: #1D1D1D;
@@ -57,13 +57,14 @@ header .botao button {
     cursor: pointer;
 }
 
+
+
 .container {
     width: 100%;
-    max-width: 1900px;
     background-color: #954600;
     padding: 100px;
     border-radius: 20px;
-    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .texto_selecione {
@@ -73,6 +74,7 @@ header .botao button {
     flex-grow: 1;
     margin-bottom: 30px;
 }
+
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -90,4 +92,11 @@ header .botao button {
     font-size: 16px;
     font-weight: bold;
     text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tipo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
